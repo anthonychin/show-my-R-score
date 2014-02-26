@@ -6,10 +6,13 @@
 	<script type="text/javascript" src="calculateRscore.js"></script>
 </head>
 <body>
-	<input type="text" placeholder="My Grade" name="my-grade"></br>
-	<input type="text" placeholder="Class Average" name="class-average"></br>
-	<input type="text" placeholder="High School Class Average" name="highschool-class-average" default="75"></br>
-	<input type="text" placeholder="Standard Deviation" name="standard-deviation"></br>
-	<button onclick="response">Show My fucking R score</button>
+	<form>
+	<input type="text" placeholder="My Grade" id="my-grade"></br>
+	<input type="text" placeholder="Class Average" id="class-average"></br>
+	<input type="text" placeholder="High School Class Average" id="highschool-class-average" default="75"></br>
+	<input type="text" placeholder="Standard Deviation" id="standard-deviation"></br>
+	<button type="button" onclick="calculateRScore()">Show My R score</button>
+	</form>
+	<div id="result"><p></p></div>
 </body>
 </html>
