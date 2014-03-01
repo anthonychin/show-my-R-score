@@ -1,0 +1,55 @@
+body {
+	position: fixed;
+	/*margin: 100px 50px;*/
+	text-align: center;
+	background-color: #13A5BB;
+	color: white;
+	font-family: helvetica; 
+}
+input {
+	background-color: #13A5BB;
+	color: white;
+	font-family: helvetica;
+	border: transparent;
+}
+button {
+	background-color: #000;
+	-moz-border-radius: 28px;
+	-webkit-border-radius: 28px;
+	border-radius: 28px;
+	color: white;
+	border: 10px solid transparent;
+}
+form {
+	height: 200px;
+	width: 400px;
+
+	position: fixed;
+	top: 50%;
+	left: 60%;
+}
+h1 {
+	position: fixed;
+	top: 40%;
+	left: 50%;
+}
+#result{
+	position: fixed;
+	top: 55%;
+	left: 40%;
+}
+::-webkit-input-placeholder {
+	color: white;
+}
+
+:-moz-placeholder { /* firefox 18- */
+	color: white;
+}
+
+::-moz-placeholder { /* firefox 19+ */
+	color: white;
+}
+
+:-ms-input-placeholder {
+	color:white;
+}
