@@ -11,8 +11,12 @@ function calculateRScore () {
 	classAverage = parseInt(document.getElementById('class-average').value);
 	highschoolClassAverage = parseInt(document.getElementById('highschool-class-average').value);
 	standardDeviation = parseFloat(document.getElementById('standard-deviation').value);
-	var rScore = (calculateZScore() + calculateGroupStrength() + 5)*5;
-	document.getElementById("result").innerHTML = rScore;
+	if (getGradeLowerOrEqualToOneHundred()) {
+		var rScore = (calculateZScore() + calculateGroupStrength() + 5)*5;
+		document.getElementById("result").innerHTML = rScore;
+	} else {
+		document.getElementById("result").innerHTML = "Error, Please enter a valid number";
+	}
 }
 
 // Z score cannot exceed 3 or -3
@@ -33,6 +37,15 @@ function calculateZScore () {
 function calculateGroupStrength () {
 	var groupStrength = (highschoolClassAverage - 75)/14;
 	return groupStrength
+}
+
+function getGradeLowerOrEqualToOneHundred () {
+	if (myGrade > 100 || classAverage > 100 || highschoolClassAverage > 100 || standardDeviation > 100) {
+    return false;
+  } else if (myGrade < 0 || classAverage < 0 || highschoolClassAverage < 0 || standardDeviation < 0) {
+    return false;
+  }
+  return true;
 }
 
 //http://www.slc.qc.ca/sites/slc/files/documents/the_r_score_presentation.pdf

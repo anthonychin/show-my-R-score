@@ -2,16 +2,17 @@
 <html>
 <head>
 	<title>Show My R Score!</title>
-
+	<link rel="stylesheet" type="text/css" href="style.css"></link> 
 	<script type="text/javascript" src="calculateRscore.js"></script>
 </head>
 <body>
+  <h1> Show My R Score </h1>
 	<form>
 	<input type="text" placeholder="My Grade" id="my-grade"></br>
 	<input type="text" placeholder="Class Average" id="class-average"></br>
-	<input type="text" placeholder="High School Class Average" id="highschool-class-average" default="75"></br>
+	<input type="text" placeholder="High School Class Average" id="highschool-class-average"></br>
 	<input type="text" placeholder="Standard Deviation" id="standard-deviation"></br>
-	<button type="button" onclick="calculateRScore()">Show My R score</button>
+	<button type="button" onclick="calculateRScore()">generate R Score</button>
 	</form>
 	<div id="result"><p></p></div>
 </body>
