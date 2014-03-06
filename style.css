@@ -1,16 +1,22 @@
 body {
-	position: fixed;
-	/*margin: 100px 50px;*/
+	padding: 0;
+	margin: 0;
 	text-align: center;
 	background-color: #13A5BB;
 	color: white;
-	font-family: helvetica; 
+}
+
+h1,
+body {
+  	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  	font-weight: 300px;
 }
 input {
 	background-color: #13A5BB;
 	color: white;
 	font-family: helvetica;
 	border: transparent;
+	background: transparent;
 }
 button {
 	background-color: #000;
@@ -25,18 +31,19 @@ form {
 	width: 400px;
 
 	position: fixed;
-	top: 50%;
-	left: 60%;
+	top: 55%;
+	left: 40%;
 }
 h1 {
 	position: fixed;
-	top: 40%;
+	top: 35%;
 	left: 50%;
+	font-size: 36px;
 }
 #result{
 	position: fixed;
 	top: 55%;
-	left: 40%;
+	left: 70%;
 }
 ::-webkit-input-placeholder {
 	color: white;

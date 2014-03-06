@@ -13,7 +13,7 @@ function calculateRScore () {
 	standardDeviation = parseFloat(document.getElementById('standard-deviation').value);
 	if (getGradeLowerOrEqualToOneHundred()) {
 		var rScore = (calculateZScore() + calculateGroupStrength() + 5)*5;
-		document.getElementById("result").innerHTML = rScore;
+		document.getElementById("result").innerHTML = rScore.toFixed(2);
 	} else {
 		document.getElementById("result").innerHTML = "Error, Please enter a valid number";
 	}
