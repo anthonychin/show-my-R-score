@@ -9,41 +9,53 @@ body {
 h1,
 body {
   	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  	font-weight: 300px;
+  	font-weight: 200;
 }
 input {
-	background-color: #13A5BB;
 	color: white;
 	font-family: helvetica;
 	border: transparent;
 	background: transparent;
+	font-size: 13px;
 }
+
+input:focus,
+button:focus {
+    outline: 0;
+}
+
 button {
-	background-color: #000;
+  	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
 	-moz-border-radius: 28px;
 	-webkit-border-radius: 28px;
 	border-radius: 28px;
 	color: white;
-	border: 10px solid transparent;
+	border: 1px solid #12a6bd;
+	background: transparent;
+	font-size: 15px;
 }
 form {
 	height: 200px;
 	width: 400px;
 
 	position: fixed;
-	top: 55%;
+	top: 50%;
 	left: 40%;
 }
 h1 {
+	height: 200px;
+	width: 400px;
+
 	position: fixed;
-	top: 35%;
-	left: 50%;
-	font-size: 36px;
+	top: 40%;
+	left: 40%;
+	font-size: 30px;
 }
 #result{
 	position: fixed;
 	top: 55%;
 	left: 70%;
+	font-size: 24px;
 }
 ::-webkit-input-placeholder {
 	color: white;
