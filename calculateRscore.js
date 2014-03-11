@@ -11,11 +11,14 @@ function calculateRScore () {
 	classAverage = parseInt(document.getElementById('class-average').value);
 	highschoolClassAverage = parseInt(document.getElementById('highschool-class-average').value);
 	standardDeviation = parseFloat(document.getElementById('standard-deviation').value);
-	if (getGradeLowerOrEqualToOneHundred()) {
+  if (isNaN(myGrade) || isNaN(classAverage) || isNaN(highschoolClassAverage) || isNaN(standardDeviation)) {
+	  document.getElementById("result").innerHTML = "Error, Missing field(s)";
+  }
+  else if (getGradeLowerOrEqualToOneHundred()) {
 		var rScore = (calculateZScore() + calculateGroupStrength() + 5)*5;
-		document.getElementById("result").innerHTML = rScore.toFixed(2);
+	  document.getElementById("result").innerHTML = rScore.toFixed(2);
 	} else {
-		document.getElementById("result").innerHTML = "Error, Please enter a valid number";
+		document.getElementById("result").innerHTML = "Error, Enter a valid number";
 	}
 }
 
