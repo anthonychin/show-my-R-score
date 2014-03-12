@@ -8,7 +8,7 @@ body {
 
 h1,
 body {
-  	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  	font-family: "Open Sans", "HelveticaNeue-Light", "Arial", sans-serif;
   	font-weight: 200;
 }
 input {
@@ -25,15 +25,17 @@ button:focus {
 }
 
 button {
-  	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-	-moz-border-radius: 28px;
-	-webkit-border-radius: 28px;
-	border-radius: 28px;
+	font-family: "Open Sans", "HelveticaNeue-Light", "Arial", sans-serif;
 	color: white;
-	border: 1px solid #12a6bd;
+  border: 1px solid #13A5BB;
 	background: transparent;
 	font-size: 15px;
 }
+
+button:hover {
+	border: 1px solid #9fc8e3;
+}
+
 form {
 	height: 200px;
 	width: 400px;
